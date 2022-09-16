@@ -2,6 +2,6 @@
 package laboratoriotp2grupo4;
 
 
-public class Vehiculos {
+public class Vehiculo {
     
 }

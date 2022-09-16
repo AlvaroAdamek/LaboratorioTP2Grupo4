@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Viaje">
   <ClassDiagramComponents>
-    <Class name="Viaje" package="" visibility="public" xPosition="106.0" yPosition="279.0">
+    <Class name="Viaje" package="" visibility="public" xPosition="40.0" yPosition="279.0">
       <Fields>
         <Field name="origen" type="Ciudad" visibility="private"/>
         <Field name="destino" type="Ciudad" visibility="private"/>
@@ -97,14 +97,14 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="has" source="Vehículo" target="Combustible" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <HasRelation name="has" source="Viaje" target="Ciudad" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Auto" target="Vehículo"/>
-    <UseRelation name="" source="Main" target="Viaje" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Camión" target="Vehículo"/>
     <IsRelation name="is" source="Camioneta" target="Vehículo"/>
-    <HasRelation name="has" source="Viaje" target="Vehículo" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Camión" target="Vehículo"/>
+    <IsRelation name="is" source="Auto" target="Vehículo"/>
     <UseRelation name="" source="Main" target="Vehículo" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Main" target="Ciudad" sourceCardinality="1..*" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Viaje" target="Ciudad" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Main" target="Viaje" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Viaje" target="Vehículo" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Vehículo" target="Combustible" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
