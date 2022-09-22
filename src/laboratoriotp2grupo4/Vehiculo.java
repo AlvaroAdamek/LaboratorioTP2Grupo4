@@ -14,10 +14,7 @@ public abstract class Vehiculo {
         this.combustible = combustible;
     }
 
-    @Override
-    public String toString() {
-        return "Vehiculo{" + "marca=" + marca + ", patente=" + patente + ", combustible=" + combustible + '}';
-    }
+   
 
     public Double calcularCostoDeCombustible( Double distancia) {
         return null;

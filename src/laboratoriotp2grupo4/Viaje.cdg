@@ -31,7 +31,7 @@
         <Method name="calcularCostoTotal" returnType="Double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Vehículo" package="" visibility="public" xPosition="712.0" yPosition="315.0">
+    <Class name="Vehículo" package="" visibility="public" isAbstract="true" xPosition="712.0" yPosition="315.0">
       <Fields>
         <Field name="marca" type="String" visibility="protected"/>
         <Field name="patente" type="String" visibility="protected"/>
@@ -97,14 +97,14 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <IsRelation name="is" source="Camioneta" target="Vehículo"/>
-    <IsRelation name="is" source="Camión" target="Vehículo"/>
     <IsRelation name="is" source="Auto" target="Vehículo"/>
+    <HasRelation name="has" source="Vehículo" target="Combustible" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Main" target="Vehículo" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Main" target="Ciudad" sourceCardinality="1..*" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Camioneta" target="Vehículo"/>
     <HasRelation name="has" source="Viaje" target="Ciudad" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
     <UseRelation name="" source="Main" target="Viaje" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Camión" target="Vehículo"/>
     <HasRelation name="has" source="Viaje" target="Vehículo" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <HasRelation name="has" source="Vehículo" target="Combustible" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>

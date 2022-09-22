@@ -19,6 +19,11 @@ public class Combustible {
         this.tipo = tipo;
         this.precio = precio;
     }
+
+    @Override
+    public String toString() {
+        return "Combustible{" + "tipo=" + tipo + ", precio=" + precio + '}';
+    }
     
     
 

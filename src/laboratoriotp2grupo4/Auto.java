@@ -18,7 +18,7 @@ public class Auto extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Auto{" + "consumo=" + consumo + '}';
+        return "Auto{  marca=" + marca + ", patente=" + patente + ",combustible " + combustible.toString() +'}';
     }
     
 } 

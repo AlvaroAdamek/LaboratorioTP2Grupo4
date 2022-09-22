@@ -16,7 +16,8 @@ public class Camion extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Camion{" + "consumo=" + consumo + '}';
+        return "Camion{  marca=" + marca + ", patente=" + patente + ",combustible " + combustible.toString() +'}';
+ 
     }
     
 }

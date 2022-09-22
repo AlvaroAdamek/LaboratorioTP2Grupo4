@@ -20,6 +20,7 @@ public class LaboratorioTP2Grupo4 {
        
         System.out.printf("El costo desde "+ ciudadOr.getNombre() + " hasta "+ ciudadDe.getNombre() + " es $%.2f",viaje.calcularCostoTotal());
         System.out.println("");
+        System.out.println("Con un vehiculo con la siguientes caracteristicas: " + vehi.toString());
       
         //creamos ciudad de destino con  distinta ruta y reutilizamos ciudadOr
         Ciudad ciuDe=new Ciudad(34,250d,"Cordoba");
@@ -31,7 +32,8 @@ public class LaboratorioTP2Grupo4 {
         Viaje viajecito =new Viaje(ciudadOr,ciuDe,500d,camioneta,3);
         
         System.out.printf("El costo desde "+ ciudadOr.getNombre() + " hasta "+ ciuDe.getNombre() + " es $%.2f",viajecito.calcularCostoTotal());
-        
+        System.out.println("");
+        System.out.println("Con un vehiculo con la siguientes caracteristicas: " + camioneta.toString());
         
         
         
