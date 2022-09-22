@@ -14,7 +14,7 @@ public class LaboratorioTP2Grupo4 {
         //creamos objeto combustible
         Combustible combus= new Combustible("nafta",142.2);
         //creamos vehiculo
-       Vehiculo vehi = new Auto("toyota","ABC123",combus);
+       Vehiculo vehi = new Auto("toyota","ABC123",combus,"auto");
        //creamos viaje
        Viaje viaje= new Viaje(ciudadOr,ciudadDe,vehi,2);
        
@@ -27,7 +27,7 @@ public class LaboratorioTP2Grupo4 {
         //creamos combustible
         Combustible com=new Combustible("gasoil",200.5);
         //creamos otro vehiculo
-        Vehiculo camioneta=new Camioneta("Ford","AAA222",com);
+        Vehiculo camioneta=new Camioneta("Ford","AAA222",com, "camioneta");
         //creamos otro viaje usando constructor que tiene la distancia en km
         Viaje viajecito =new Viaje(ciudadOr,ciuDe,500d,camioneta,3);
         

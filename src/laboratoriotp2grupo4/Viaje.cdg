@@ -36,6 +36,7 @@
         <Field name="marca" type="String" visibility="protected"/>
         <Field name="patente" type="String" visibility="protected"/>
         <Field name="combustible" type="Combustible" visibility="protected"/>
+        <Field name="tipo" type="String" visibility="protected"/>
       </Fields>
       <Constructors/>
       <Methods>
@@ -97,14 +98,14 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
+    <UseRelation name="" source="Main" target="Viaje" sourceCardinality="1..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="Auto" target="Vehículo"/>
-    <HasRelation name="has" source="Vehículo" target="Combustible" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Main" target="Vehículo" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Main" target="Ciudad" sourceCardinality="1..*" targetCardinality="1..1"/>
     <IsRelation name="is" source="Camioneta" target="Vehículo"/>
     <HasRelation name="has" source="Viaje" target="Ciudad" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="Main" target="Viaje" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Camión" target="Vehículo"/>
     <HasRelation name="has" source="Viaje" target="Vehículo" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Camión" target="Vehículo"/>
+    <UseRelation name="" source="Main" target="Vehículo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Main" target="Ciudad" sourceCardinality="1..*" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Vehículo" target="Combustible" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>

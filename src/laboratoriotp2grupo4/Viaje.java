@@ -71,7 +71,10 @@ public class Viaje {
             return distancia;
     }
     public double calcularCostoPeajes(){
-        return peajes*100;
+        if (vehiculo.getTipo().equalsIgnoreCase("camion")) {
+            return peajes * 500;
+        }else{
+        return peajes*100;}
         
     }
     
