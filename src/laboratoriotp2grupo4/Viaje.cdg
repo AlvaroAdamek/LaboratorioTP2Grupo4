@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Viaje">
   <ClassDiagramComponents>
-    <Class name="Viaje" package="" visibility="public" xPosition="40.0" yPosition="279.0">
+    <Class name="Viaje" package="" visibility="public" xPosition="37.0" yPosition="258.0">
       <Fields>
         <Field name="origen" type="Ciudad" visibility="private"/>
         <Field name="destino" type="Ciudad" visibility="private"/>
@@ -31,7 +31,7 @@
         <Method name="calcularCostoTotal" returnType="Double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Vehículo" package="" visibility="public" xPosition="583.0" yPosition="334.0">
+    <Class name="Vehículo" package="" visibility="public" xPosition="712.0" yPosition="315.0">
       <Fields>
         <Field name="marca" type="String" visibility="protected"/>
         <Field name="patente" type="String" visibility="protected"/>
@@ -78,7 +78,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="Combustible" package="" visibility="public" xPosition="628.0" yPosition="158.0">
+    <Class name="Combustible" package="" visibility="public" xPosition="802.0" yPosition="82.0">
       <Fields>
         <Field name="tipo" type="String" visibility="private"/>
         <Field name="precio" type="Double" visibility="private"/>
