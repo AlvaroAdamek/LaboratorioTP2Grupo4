@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Viaje">
   <ClassDiagramComponents>
-    <Class name="Viaje" package="" visibility="public" xPosition="37.0" yPosition="258.0">
+    <Class name="Viaje" package="" visibility="public" xPosition="1.0" yPosition="331.0">
       <Fields>
         <Field name="origen" type="Ciudad" visibility="private"/>
         <Field name="destino" type="Ciudad" visibility="private"/>
@@ -41,16 +41,20 @@
       <Constructors/>
       <Methods>
         <Method name="calcularCostoDeCombustible" returnType="Double" visibility="public"/>
+        <Method name="getTipo" returnType="String" visibility="public"/>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
       </Methods>
     </Class>
-    <Class name="Auto" package="" visibility="public" xPosition="333.0" yPosition="579.0">
+    <Class name="Auto" package="" visibility="public" xPosition="275.0" yPosition="630.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="calcularCostoDeCombustible" returnType="Double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Camión" package="" visibility="public" xPosition="588.0" yPosition="579.0">
+    <Class name="Camión" package="" visibility="public" xPosition="582.0" yPosition="630.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -64,7 +68,7 @@
         <Method name="calcularCostoDeCombustible" returnType="Double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Ciudad" package="" visibility="public" xPosition="101.0" yPosition="63.0">
+    <Class name="Ciudad" package="" visibility="public" xPosition="34.0" yPosition="6.0">
       <Fields>
         <Field name="Ruta" type="Integer" visibility="private"/>
         <Field name="km" type="Double" visibility="private"/>
@@ -77,15 +81,37 @@
           <Argument type="String" name="nombre"/>
         </Constructor>
       </Constructors>
-      <Methods/>
+      <Methods>
+        <Method name="getRuta" returnType="Integer" visibility="public"/>
+        <Method name="setRuta" returnType="void" visibility="public">
+          <Argument type="Integer" name="ruta"/>
+        </Method>
+        <Method name="getKm" returnType="Double" visibility="public"/>
+        <Method name="setKm" returnType="void" visibility="public">
+          <Argument type="Double" name="km"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+      </Methods>
     </Class>
-    <Class name="Combustible" package="" visibility="public" xPosition="802.0" yPosition="82.0">
+    <Class name="Combustible" package="" visibility="public" xPosition="882.0" yPosition="44.0">
       <Fields>
         <Field name="tipo" type="String" visibility="private"/>
         <Field name="precio" type="Double" visibility="private"/>
       </Fields>
       <Constructors/>
-      <Methods/>
+      <Methods>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
+        <Method name="getPrecio" returnType="Double" visibility="public"/>
+        <Method name="getTipo" returnType="String" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="Double" name="precio"/>
+        </Method>
+      </Methods>
     </Class>
     <Class name="Main" package="" visibility="public" xPosition="405.0" yPosition="63.0">
       <Fields/>
