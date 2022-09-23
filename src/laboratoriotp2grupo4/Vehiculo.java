@@ -5,6 +5,7 @@ public abstract class Vehiculo {
     protected String marca;
 
     protected String patente;
+    
     protected String tipo;
 
     protected Combustible combustible;
